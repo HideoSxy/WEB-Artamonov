@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+
+  /* обнуление внеш отступа */
+  margin: 0;
+
+  /* обнулениве внут отсутпа */
+  padding: 0;
+}
+
+body {
+  font-family: 'Jetbrains Mono', Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #000000;
+}
+
+
+nav {
+  padding: 10px 0;
+  /* отступ сверху и снизу, справа и слева */
+}
+
+nav a {
+  /* убрать подчеркивание ссылок */
+  text-decoration: none;
+
+  font-family: 'Jetbrains Mono', Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+
+  /* отступ справа чтоб пункты не слипались  */
+  margin-right: 15px;
+}
+
+nav a:hover {
+  color: #666666;
+}
+
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Jetbrains Mono', Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+
+img {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;              /* внутренний отступ текста от границ ячейки */
+  border: 1px solid #000000;  /* граница толщиной 1px, сплошная (solid), чёрная */
+  text-align: left;           /* выравнивание текста по левому краю ячейки */
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin-bottom: 6px;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+footer a:hover {
+  color: #cccccc;
+}
