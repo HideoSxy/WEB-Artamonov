@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собрать ланч — БизнесЛанч</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jetbrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lunch.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <header>
+        <h1>Бизнес Ланч</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="lunch.html" id="active">Собрать ланч</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Супы</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" alt="Борщ со сметаной">
+                    <p class="price">150 Р</p>
+                    <p class="name">Борщ со сметаной</p>
+                    <p class="weight">250 г</p>
+                    <button>Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=400&q=80" alt="Куриный суп с лапшой">
+                    <p class="price">140 Р</p>
+                    <p class="name">Куриный суп с лапшой</p>
+                    <p class="weight">250 г</p>
+                    <button>Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="Сырный крем-суп">
+                    <p class="price">180 Р</p>
+                    <p class="name">Сырный крем-суп</p>
+                    <p class="weight">200 г</p>
+                    <button>Добавить</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Главные блюда</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=80" alt="Куриное филе на гриле">
+                    <p class="price">280 Р</p>
+                    <p class="name">Куриное филе на гриле</p>
+                    <p class="weight">150 г</p>
+                    <button>Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Плов с говядиной">
+                    <p class="price">260 Р</p>
+                    <p class="name">Плов с говядиной</p>
+                    <p class="weight">300 г</p>
+                    <button>Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80" alt="Паста с фрикадельками">
+                    <p class="price">270 Р</p>
+                    <p class="name">Паста с фрикадельками</p>
+                    <p class="weight">250 г</p>
+                    <button>Добавить</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Напитки</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Компот из сухофруктов">
+                    <p class="price">80 Р</p>
+                    <p class="name">Компот из сухофруктов</p>
+                    <p class="weight">200 мл</p>
+                    <button>Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80" alt="Чай">
+                    <p class="price">60 Р</p>
+                    <p class="name">Чёрный чай с лимоном</p>
+                    <p class="weight">250 мл</p>
+                    <button>Добавить</button>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80" alt="Морс">
+                    <p class="price">90 Р</p>
+                    <p class="name">Клюквенный морс</p>
+                    <p class="weight">300 мл</p>
+                    <button>Добавить</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="order">
+        <h2>Оформить заказ</h2>
+        <form action="https://httpbin.org/post" method="POST">
+
+            <div class="order-col">
+                <h3>Заказ клиента</h3>
+
+                <label for="soup">Суп</label>
+                <select name="soup" id="soup" required>
+                    <option value="">Выберите суп</option>
+                    <option value="borsch">Борщ со сметаной</option>
+                    <option value="chicken-noodle">Куриный суп с лапшой</option>
+                    <option value="cheese-soup">Сырный крем-суп</option>
+                </select>
+
+                <label for="main">Главное блюдо</label>
+                <select name="main" id="main" required>
+                    <option value="">Выберите главное блюдо</option>
+                    <option value="grilled-chicken">Куриное филе на гриле</option>
+                    <option value="plov">Плов с говядиной</option>
+                    <option value="pasta">Паста с фрикадельками</option>
+                </select>
+
+                <label for="drink">Напиток</label>
+                <select name="drink" id="drink" required>
+                    <option value="">Выберите напиток</option>
+                    <option value="kompot">Компот из сухофруктов</option>
+                    <option value="tea">Чёрный чай с лимоном</option>
+                    <option value="mors">Клюквенный морс</option>
+                </select>
+
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" rows="4"></textarea>
+            </div>
+
+            <div class="order-col">
+                <h3>Данные клиента</h3>
+
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe" checked>
+                    Подписаться на рассылку
+                </label>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone" required>
+
+                <label for="address">Адрес</label>
+                <input type="text" name="address" id="address" required>
+
+                <p>Время доставки</p>
+                <label for="delivery-now">
+                    <input type="radio" name="time" value="now" id="delivery-now" required>
+                    Как можно скорее
+                </label>
+                <label for="delivery-later">
+                    <input type="radio" name="time" value="later" id="delivery-later">
+                    В указанное время
+                </label>
+
+                <label for="time">Укажите время</label>
+                <input type="time" name="time-choice" id="time" min="07:00" max="23:00" step="300">
+
+                <button type="reset">Сбросить</button>
+                <button type="submit">Отправить</button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Контакты компании «БизнесЛанч»</p>
+        <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+        <p>Email: <a href="mailto:order@businesslunch.ru">order@businesslunch.ru</a></p>
+        <p>г. Москва, ул. Примерная, д. 1</p>
+    </footer>
+
+</body>
+</html>
