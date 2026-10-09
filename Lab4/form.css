@@ -1,0 +1,115 @@
+.order {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.order h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.order form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* два блока формы в колонку */
+  gap: 30px;
+}
+
+.order-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.order-col h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.order-col label {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.order-col input[type="text"],
+.order-col input[type="email"],
+.order-col input[type="tel"],
+.order-col select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+
+.order-col textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.order-col input[type="time"] {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+
+.order-col input[type="checkbox"],
+.order-col input[type="radio"] {
+  margin-right: 5px;
+}
+
+.order-col button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-col button[type="reset"] {
+  background: #ddd;
+}
+
+.order-col button[type="submit"] {
+  background: tomato;
+  color: #fff;
+}
+
+#order {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-item,
+.order-total {
+  padding: 8px;
+  border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.order-item h4,
+.order-total h4 {
+  font-size: 15px;
+  color: tomato;
+  margin-bottom: 4px;
+}
+
+.order-total {
+  border: 1px solid tomato;
+}
+
+@media (max-width: 600px) {
+  .order form {
+    grid-template-columns: 1fr;
+  }
+}
