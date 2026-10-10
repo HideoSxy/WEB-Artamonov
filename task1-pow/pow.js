@@ -6,6 +6,5 @@ function pow(x, n) {
   return result;
 }
 
-// примеры
 console.log(pow(2, 3)); 
 console.log(pow(5, 2)); 
