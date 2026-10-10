@@ -1,4 +1,3 @@
-// возвращает наименьшую цифру целого неотрицательного числа x
 function minDigit(x) {
   let min = 9;
   do {
@@ -9,6 +8,5 @@ function minDigit(x) {
   return min;
 }
 
-// примеры
-console.log(minDigit(2017)); // 0
-console.log(minDigit(999)); // 9
+console.log(minDigit(2017)); 
+console.log(minDigit(999)); 

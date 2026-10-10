@@ -1,4 +1,4 @@
-// шифр Цезаря по русскому алфавиту (включая ё)
+
 const alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
 
 function cesar(str, shift, action) {
@@ -22,6 +22,6 @@ function cesar(str, shift, action) {
   return result;
 }
 
-// расшифровка сообщения: "эзтыхз фзъзъз"
-// ответ: "хакуна матата" (сдвиг 8)
+
+
 console.log(cesar('эзтыхз фзъзъз', 8, 'decode'));

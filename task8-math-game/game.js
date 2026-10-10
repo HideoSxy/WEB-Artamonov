@@ -1,11 +1,11 @@
-// три уровня: начальный, средний, продвинутый
+
 const LEVELS = [
   { name: 'начальный', gen: genArithmetic },
   { name: 'средний', gen: genMid },
   { name: 'продвинутый', gen: genPro },
 ];
 
-// состояние игры
+
 let game = { levelIndex: 0, correct: 0, wrong: 0, questions: [], qIndex: 0 };
 
 function rnd(a, b) { return Math.floor(Math.random() * (b - a + 1)) + a; }
@@ -14,7 +14,7 @@ function pick() {
   return list[rnd(0, list.length - 1)];
 }
 
-// начальный уровень: только арифметика
+
 function genArithmetic() {
   const a = rnd(2, 20), b = rnd(2, 20), o = pick('+', '-', '*');
   let ans;
@@ -24,7 +24,7 @@ function genArithmetic() {
   return { q: a + ' ' + o + ' ' + b, a: ans, type: 'number' };
 }
 
-// средний уровень: сравнение
+
 function genMid() {
   const a = rnd(2, 20), b = rnd(2, 20), o = pick('+', '-');
   const left = o === '+' ? a + b : a - b;
@@ -33,7 +33,7 @@ function genMid() {
   return { q: left + ' ___ ' + c, a: rel, type: 'compare' };
 }
 
-// продвинутый уровень: логические и побитовые операторы
+
 function genPro() {
   if (Math.random() < 0.5) {
     const b1 = Math.random() < 0.5, b2 = Math.random() < 0.5;
@@ -51,7 +51,7 @@ function genPro() {
   return { q: a + ' ' + o + ' ' + b, a: ans, type: 'number' };
 }
 
-// 10 уникальных вопросов уровня
+
 function makeLevel(gen) {
   const result = [];
   while (result.length < 10) {
@@ -114,7 +114,7 @@ function answer(user) {
   }
 }
 
-// итоги уровня
+
 function finishLevel() {
   document.getElementById('correct').textContent = 'Верно: ' + game.correct;
   document.getElementById('wrong').textContent = 'Неверно: ' + game.wrong;
@@ -133,7 +133,7 @@ function finishLevel() {
     return;
   }
 
-  // завершение игры
+
   const message = passed
     ? 'Поздравляем! Вы прошли все уровни!'
     : 'Вы не набрали 80% и не прошли уровень. Попробуйте снова!';

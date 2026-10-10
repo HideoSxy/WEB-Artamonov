@@ -1,4 +1,3 @@
-// возвращает x в степени n (n - натуральное число)
 function pow(x, n) {
   let result = 1;
   for (let i = 0; i < n; i++) {
@@ -8,5 +7,5 @@ function pow(x, n) {
 }
 
 // примеры
-console.log(pow(2, 3)); // 8
-console.log(pow(5, 2)); // 25
+console.log(pow(2, 3)); 
+console.log(pow(5, 2)); 

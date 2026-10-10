@@ -1,4 +1,4 @@
-// сортирует массив объектов по значению ключа key (по возрастанию)
+
 function getSortedArray(array, key) {
   const result = [];
   for (let i = 0; i < array.length; i++) {
@@ -16,7 +16,7 @@ function getSortedArray(array, key) {
   return result;
 }
 
-// пример
+
 const data = [
   { name: 'banana', price: 3 },
   { name: 'apple', price: 1 },

@@ -1,4 +1,3 @@
-// возвращает строку с правильной формой множественного числа слова "записи"
 function pluralizeRecords(n) {
   let records;
   if (n % 10 === 1 && n % 100 !== 11) {
@@ -11,8 +10,7 @@ function pluralizeRecords(n) {
   return 'В результате выполнения запроса было найдено ' + n + ' ' + records;
 }
 
-// примеры
-console.log(pluralizeRecords(1)); // ... 1 запись
-console.log(pluralizeRecords(3)); // ... 3 записи
-console.log(pluralizeRecords(5)); // ... 5 записей
-console.log(pluralizeRecords(11)); // ... 11 записей
+console.log(pluralizeRecords(1)); 
+console.log(pluralizeRecords(3)); 
+console.log(pluralizeRecords(5)); 
+console.log(pluralizeRecords(11)); 
