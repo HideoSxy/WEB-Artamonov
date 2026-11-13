@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;              /* растянет main, футер прижмётся вниз */
+  flex-direction: column;
+  font-family: 'Jetbrains Mono', Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+nav a#active {
+  color: tomato;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: left;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-between;
+  }
+  .about img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  .about img {
+    width: 100%;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  table {
+    font-size: 12px;
+  }
+}
