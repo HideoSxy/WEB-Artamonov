@@ -1,42 +1,37 @@
 // массив объектов с блюдами (6 на категорию, у каждого есть kind для фильтра)
 const dishes = [
-  // СУПЫ (kind: fish/meat/veg)
-  { keyword: 'ukha',        name: 'Уха',                    price: 180, category: 'soup',   kind: 'fish', count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOg-QphJSRKwqtDDByoq7cNHwXiV8JzM1kY4SOZYQocQ&s=10' },
+  { keyword: 'ukha',        name: 'Уха',                    price: 180, category: 'soup',   kind: 'fish', count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRYLLYN9zLg-J9__39KIxKmbGzSwIszUAvXJakyXN7YQ&s=10' },
   { keyword: 'shchi',       name: 'Щи',                     price: 160, category: 'soup',   kind: 'meat', count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvBUDy_3czh2nvgr5c0brqlh7Bjqi68RTnem6idv9YQ&s=10' },
-  { keyword: 'borsch',      name: 'Борщ со сметаной',        price: 150, category: 'soup',   kind: 'meat', count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThF7x2OAMejIQX8zskJBemPdCWLrkgS4u4irRzptZsGw&s=10' },
-  { keyword: 'gazpacho',    name: 'Гаспачо',                 price: 140, category: 'soup',   kind: 'veg',  count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThF7x2OAMejIQX8zskJBemPdCWLrkgS4u4irRzptZsGw&s=10' },
-  { keyword: 'asparagus',   name: 'Суп из спаржи',            price: 170, category: 'soup',   kind: 'veg',  count: '220 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThF7x2OAMejIQX8zskJBemPdCWLrkgS4u4irRzptZsGw&s=10' },
+  { keyword: 'borsch',      name: 'Борщ со сметаной',        price: 150, category: 'soup',   kind: 'meat', count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOg-QphJSRKwqtDDByoq7cNHwXiV8JzM1kY4SOZYQocQ&s=10' },
+  { keyword: 'gazpacho',    name: 'Гаспачо',                 price: 140, category: 'soup',   kind: 'veg',  count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgD6LOHMbVFRgO-xuG5-KkITDyN5CkNCiRDxAWHMKc95wEjQ8aXNEaCPh2VKH33VHxJZh64Gk05ZGf41zqAxn5icC0whiwCKOA4YI5LULr&s=10' },
+  { keyword: 'asparagus',   name: 'Суп из спаржи',            price: 170, category: 'soup',   kind: 'veg',  count: '220 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR436Rk5HiSCOWedirdgYShqfJO5vEf5DyiJm9Mtp2sxw&s=10' },
   { keyword: 'mushroom',    name: 'Грибной крем-суп',        price: 155, category: 'soup',   kind: 'veg',  count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThF7x2OAMejIQX8zskJBemPdCWLrkgS4u4irRzptZsGw&s=10' },
 
-  // ГЛАВНЫЕ БЛЮДА (kind: fish/meat/veg)
   { keyword: 'fish-cutlets', name: 'Рыбные котлеты',         price: 270, category: 'main',  kind: 'fish', count: '180 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQEGThDYE694R9vd4zZr-yGtDWgsCJLGmjNmhZA_G2w&s=10' },
-  { keyword: 'salmon',      name: 'Лосось на пару',           price: 320, category: 'main',  kind: 'fish', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQEGThDYE694R9vd4zZr-yGtDWgsCJLGmjNmhZA_G2w&s=10' },
-  { keyword: 'beef-strog',  name: 'Бефстроганов',             price: 290, category: 'main',  kind: 'meat', count: '220 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'chicken-kiev', name: 'Котлеты по-киевски',     price: 260, category: 'main',  kind: 'meat', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'veggie-reveal', name: 'Овощное рагу',          price: 200, category: 'main',  kind: 'veg',  count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
+  { keyword: 'salmon',      name: 'Лосось на пару',           price: 320, category: 'main',  kind: 'fish', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5pDo2duGTVgrD_-av9rpnvcIqL_inFid28ztGh4dGg&s=10' },
+  { keyword: 'beef-strog',  name: 'Бефстроганов',             price: 290, category: 'main',  kind: 'meat', count: '220 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStL_2WlGmamz7bMglPfECJR39eMzF-cj9l-9OYa7o9dA&s=10' },
+  { keyword: 'chicken-kiev', name: 'Котлеты по-киевски',     price: 260, category: 'main',  kind: 'meat', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfsLmHbMTE7yFQt7TE8So4Ez8gZdmTiwTgCdeg5VW7MA&s=10' },
+  { keyword: 'veggie-reveal', name: 'Овощное рагу',          price: 200, category: 'main',  kind: 'veg',  count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSOaQCteu8nkoYl18BD045z5Kg0HEPkJGpFNOYZKkLQ&s=10' },
   { keyword: 'greench-pasta', name: 'Паста с овощами',       price: 220, category: 'main',  kind: 'veg',  count: '230 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
 
-  // САЛАТЫ И СТАРТЕРЫ (kind: fish/meat/veg)
-  { keyword: 'olivie',     name: 'Салат Оливье',             price: 180, category: 'salad', kind: 'meat', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'caesar',     name: 'Салат Цезарь',             price: 250, category: 'salad', kind: 'meat', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQEGThDYE694R9vd4zZr-yGtDWgsCJLGmjNmhZA_G2w&s=10' },
-  { keyword: 'mimosa',     name: 'Салат Мимоза',             price: 190, category: 'salad', kind: 'fish', count: '180 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQEGThDYE694R9vd4zZr-yGtDWgsCJLGmjNmhZA_G2w&s=10' },
-  { keyword: 'greek',      name: 'Греческий салат',          price: 200, category: 'salad', kind: 'veg',  count: '220 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'caprese',    name: 'Салат Капрезе',             price: 210, category: 'salad', kind: 'veg',  count: '190 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'vinegret',   name: 'Винегрет',                 price: 150, category: 'salad', kind: 'veg',  count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
+  { keyword: 'olivie',     name: 'Салат Оливье',             price: 180, category: 'salad', kind: 'meat', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-dKnWpmu9SSsz2TvgL32ErpUu2rnnAQxC5c6J0faPoA&s=10' },
+  { keyword: 'caesar',     name: 'Салат Цезарь',             price: 250, category: 'salad', kind: 'meat', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6GcOcsm0q8mPJnJwERhtLoFR199F63LzHPfVpBoRcGQ&s=10' },
+  { keyword: 'mimosa',     name: 'Салат Мимоза',             price: 190, category: 'salad', kind: 'fish', count: '180 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtKRMo1XnlWUlhnKFfUBMjZuQ-cgIsjQRWXIwp6ssEA&s=10' },
+  { keyword: 'greek',      name: 'Греческий салат',          price: 200, category: 'salad', kind: 'veg',  count: '220 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbxTDPgm9Lpn5p5YVHuftnoO_t0NnKarQ1cTDhoEahw&s=10' },
+  { keyword: 'caprese',    name: 'Салат Капрезе',             price: 210, category: 'salad', kind: 'veg',  count: '190 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXplRedX4ZSX1Z2ihBjEM_O1JUyjW5M3YmCAbP0Sl3w&s=10' },
+  { keyword: 'vinegret',   name: 'Винегрет',                 price: 150, category: 'salad', kind: 'veg',  count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvnNCuKWW-55kIMqFPHbgFfbeqJJUX1i87w4Z08lQlVA&s' },
 
-  // НАПИТКИ (kind: cold/hot)
-  { keyword: 'lemonade',   name: 'Домашний лимонад',         price: 120, category: 'drink', kind: 'cold', count: '300 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKbvvLQf-51QCBoUwYCfdhvGuPGo9Wj9MrHpkNeQjuKw&s=10' },
+  { keyword: 'lemonade',   name: 'Домашний лимонад',         price: 120, category: 'drink', kind: 'cold', count: '300 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6UpFOPs3qqH-4TCEB2sWvqulUobV9itH7Bm2euz3zGQ&s=10' },
   { keyword: 'mors',       name: 'Клюквенный морс',           price: 90,  category: 'drink', kind: 'cold', count: '300 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKbvvLQf-51QCBoUwYCfdhvGuPGo9Wj9MrHpkNeQjuKw&s=10' },
-  { keyword: 'iced-tea',  name: 'Холодный чай',             price: 100, category: 'drink', kind: 'cold', count: '250 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKbvvLQf-51QCBoUwYCfdhvGuPGo9Wj9MrHpkNeQjuKw&s=10' },
+  { keyword: 'iced-tea',  name: 'Холодный чай',             price: 100, category: 'drink', kind: 'cold', count: '250 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLIk1EbTNCdqQRnBrnyQ0qIZgvW5mZ7CVUuYCgxOqFzw&s=10' },
   { keyword: 'tea',        name: 'Чёрный чай с лимоном',    price: 60,  category: 'drink', kind: 'hot',  count: '250 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHGf-5XiNXy_AhIUNi5DnW5P3lqEZE8eYgAtkYOg7qw&s=10' },
-  { keyword: 'coffee',     name: 'Кофе капучино',             price: 150, category: 'drink', kind: 'hot',  count: '200 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHGf-5XiNXy_AhIUNi5DnW5P3lqEZE8eYgAtkYOg7qw&s=10' },
-  { keyword: 'cocoa',      name: 'Какао с корицей',           price: 130, category: 'drink', kind: 'hot',  count: '250 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHGf-5XiNXy_AhIUNi5DnW5P3lqEZE8eYgAtkYOg7qw&s=10' },
+  { keyword: 'coffee',     name: 'Кофе капучино',             price: 150, category: 'drink', kind: 'hot',  count: '200 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswZ13y6ka_I8uZkrVNuOXnQX_dvSUqSJgRnWBlV2U0Q&s=10' },
+  { keyword: 'cocoa',      name: 'Какао с корицей',           price: 130, category: 'drink', kind: 'hot',  count: '250 мл', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BEAo1zwymUYtggZyOa__1REFuqDbCS7T8Yq5bo4IZw&s=10' },
 
-  // ДЕСЕРТЫ (kind: small/medium/big)
-  { keyword: 'cheesecake', name: 'Чизкейк',                 price: 180, category: 'dessert', kind: 'small', count: '100 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'pancakes',   name: 'Блинчики с ягодами',       price: 160, category: 'dessert', kind: 'small', count: '120 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'fruit-plate', name: 'Фруктовая тарелка',      price: 200, category: 'dessert', kind: 'small', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'tiramisu',   name: 'Тирамису',                 price: 220, category: 'dessert', kind: 'medium', count: '150 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'honey-cake', name: 'Торт Медовик',             price: 240, category: 'dessert', kind: 'medium', count: '180 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
-  { keyword: 'napoleon',   name: 'Наполеон',                 price: 260, category: 'dessert', kind: 'big',   count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuZ3hqNwolBMklt5I3FDH07SUNNotHv1wgymbD6E3CA&s=10' },
+  { keyword: 'cheesecake', name: 'Чизкейк',                 price: 180, category: 'dessert', kind: 'small', count: '100 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnT-v58_bXo6gjMoJeEpkdAULnwvVMtWIH6a2Dw_OxQ&s=10' },
+  { keyword: 'pancakes',   name: 'Блинчики с ягодами',       price: 160, category: 'dessert', kind: 'small', count: '120 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKq_zgjglr4gPKh6Y2XL36oNJqlt4KT3E2WgS_NiD4sA&s=10' },
+  { keyword: 'fruit-plate', name: 'Фруктовая тарелка',      price: 200, category: 'dessert', kind: 'small', count: '200 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWyLG161bPGV8j1PSBE_DoTrg-wKlr1uFpkNpgafev_g&s=10' },
+  { keyword: 'tiramisu',   name: 'Тирамису',                 price: 220, category: 'dessert', kind: 'medium', count: '150 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4e_w15Nlq44cACBOqxHrvx-nQQMF_vjd8GWaNrGxmWg&s=10' },
+  { keyword: 'honey-cake', name: 'Торт Медовик',             price: 240, category: 'dessert', kind: 'medium', count: '180 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dd-SeNxvH0BqT3sg5rdaQu3hElxQbGorG3dU_kY2CA&s=10' },
+  { keyword: 'napoleon',   name: 'Наполеон',                 price: 260, category: 'dessert', kind: 'big',   count: '250 г', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcGRhchdYqUoTYmZFJhmwBB5zTiBpl9ct-mwmP6Ua7Dg&s=10' },
 ];
